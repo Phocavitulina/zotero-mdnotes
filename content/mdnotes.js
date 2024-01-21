@@ -99,7 +99,7 @@ function getDateAdded(item) {
 function getCiteKey(item) {
   if (typeof Zotero.BetterBibTeX === "object" && Zotero.BetterBibTeX !== null) {
     var bbtItem = Zotero.BetterBibTeX.KeyManager.get(item.getField("id"));
-    return bbtItem.citekey;
+    return bbtItem.citationKey;
   }
 
   return "undefined";
